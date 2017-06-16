@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/button.css" rel="stylesheet" type="text/css"> <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Product</h1>
+<form id="f8" method="post" action="addproduct.php" >
+<div id="d12" align="center">
+<table id='tb1'>
+<tr>	<td>Product Name</td>	<td><input type="text" id="in1" name="prod_name" required></td>	</tr>
+<tr>	<td>Category</td>	<td><select name="prod_catgy" required><option value="Chain Wheel">Chain Wheel</option><option value="Axle">Axle</option><option value="Hub">Hub</option></select></td>	</tr>
+<tr>	<td>Price</td>		<td><input type="number" id="in2" name="prod_price" required></td>		<td><sub>₹/unit</sub></td></tr>	
+<tr>	<td>Description</td>	<td colspan="2"><textarea rows="5" cols="22"  maxlength="50" name="prod_desc"></textarea></td>	</tr>
+</table>
+</div>
+<br><br>
+<div align="center">
+  <table id='tb1'>
+    <tr>
+      <td><input type="submit"  value="Submit" align="middle" id="b1"></td>
+      <td><input type="reset" id="b1"></td>
+    </tr>
+  </table>
+</div>
+</form>
+</body>
+</html>

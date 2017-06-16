@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/button.css" rel="stylesheet" type="text/css"> <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1>Salary Details</h1>
+<form id="f7" action="salary.php" method="post">
+<div id="d11" align="center">
+<table id='tb1' width="642">
+<tr>	<td width="115">Job Category</td>	<td width="157"><input type="text" id="in1" name="sal_jobcat" required></td>	</tr>
+<tr>	<td>Basic Salry</td>	<td><input type="number" id="in2" name="sal_basic" required min="100">₹</td>	</tr>
+<tr>	<td>DA</td>		<td colspan="2"><input type="text" id="in5" name="sal_da"> %</td>  <td width="50">HRA</td>		<td width="210"><input type="text" id="in3" name="sal_hra"> %</td>	</tr>
+<tr>	<td>Details</td>	<td><input type="text" id="in4" name="sal_details"></td>	</tr>
+</table>
+</div>
+<br><br>
+<div align="center">
+  <table id='tb1'>
+    <tr>
+      <td><input type="submit" id="b1"  value="Submit" align="middle"></td>
+      <td><input type="reset" id="b1"></td>
+    </tr>
+  </table>
+</div>
+</form>
+
+
+</body>
+</html>

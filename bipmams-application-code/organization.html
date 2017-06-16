@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Organization</title>
+<script src="js/org.js"></script>
+<link href="css/button.css" rel="stylesheet" type="text/css"> <link href="css/tab.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="css/color.css" />
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="container">
+<h1>Organization</h1>
+<form id="f1" action="addorganization.php" method="post">
+
+
+<div style="width:600px;float:left;height:300px">
+
+<div id="d1" style="float:left">
+<table id='tb1' width="596">
+<tr>	<td width="85">Name:</td>	<td width="144"><input type="text" id="in1" name="org_name" required></td><td id="s1"></td></tr>
+<tr>	<td>Phone No.-1</td>	<td><input type="number" id="in2" name="org_phone1" required></td>	<td id="s2"></td>	<td width="120">Phone No.-2</td>	<td width="146"><input type="number" id="in3" name="org_phone2"></td><td id="s3"></td></tr>
+<tr>	<td>Email</td>	<td><input type="text" id="in4" name="org_email" required></td><td id="s4"></td>	</tr>
+<tr>	<td>Fax</td>	<td><input type="number" id="in5" name="org_fax"></td>	<td id="s5"></td>	</tr>
+<tr>	<td>Tin No.</td>	<td><input type="number" id="in17" name="org_TIN_no"></td><td id="s6"></td>	</tr>
+</table>
+</div>
+<div id="d3" name="address" style="float:left">
+
+<fieldset>
+<legend>Address</legend>	
+<table id='tb1'>
+<tr>	<td width="99">Address Line</td> <td colspan="3"><textarea rows="3" cols="50" name="org_addr"></textarea></td>	</tr>	
+<tr>	<td>Area</td>		<td width="10"><input type="text" id="in7" name="org_area"></td>	<td width="139" id="s7"></td><td colspan="2">City</td>	<td width="144"><input type="text" id="in8" name="org_city" required></td>	</tr>
+<tr>	<td>PIN Code</td>	<td><input type="number" id="in9" name="org_pincode" required></td><td width="139" id="s8"></td><td colspan="3" id="s9"></td>	</tr>
+</table>
+</fieldset>
+
+</div>
+
+
+
+<div style="padding:30px;width:520px;float:left;height:auto" id="d2">
+<table id='tb1'><tr>	<td><input type="radio" id="in10" name="org_type" value="customer" checked onClick="hideshow(document.getElementById('d4'),document.getElementById('d5'),'d5','d4')"></td>	<td>Customer</td>	<td>&nbsp;</td><td><input type="radio" id="in11" name="org_type" value="supplier" onClick="hideshow(document.getElementById
+
+('d5'),document.getElementById('d4'),'d5','d4')"></td>	<td>Supplier</td>	</tr>
+</table>
+</div>
+
+<div style="padding:10px;width:450px;float:left;height:auto" id="d4">
+<table id='tb1' align="center">
+<tr valign="top">	<td width="180" align="center">Customer Type</td>	<td><select name="cust_type" required><option value="complete">Complete</option><option value="partial">Partial</option></select></td></tr>
+<tr align="center">	<td width="180">Registeration Date</td>	<td><input type="date" id="in13" name="cust_regdate"></td>	</tr>
+</table>
+</div>
+
+<div style="padding:10px;width:450px;float:left;height:auto;display:none" id="d5">
+<table id='tb1' align="center">
+<tr valign="top" align="center">	<td width="79">Account No.</td>	<td width="144"><input type="number" id="in14" name="sup_accno"></td><td width="102" id="s10"></td>	</tr>
+<tr align="center">	<td>Supplier Type</td>	<td align="left"><select name="sup_type" id="select1"><option value=""></option><option value="steel">Steel</option><option value="chemical">Chemical</option><option value="plastic">Plastic</option></select></td>	</tr>
+</table>
+</div>
+
+<div align="center" style="clear:both">
+  <table id='tb1'>
+    <tr>
+      <td><input type="submit"  value="Submit" id="b1" align="middle" onMouseOver="return org();" onFocus="return org();"></td>
+      <td><input type="reset" id="b1"></td>
+    </tr>
+  </table>
+</div>
+</div>
+</form>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/button.css" rel="stylesheet" type="text/css"> <link href="css/tab.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Salary Payment</h1>
+<form id="f13" action="addsalarypay.php" method="post">
+<div id="d21" align="center">
+<table id='tb1'>
+<tr>	<td>Employee Id</td>	<td><input type="text" id="in1" name="emp_id" required></td>	</tr>
+<tr>	<td>Pay Amount</td>	<td><input type="number" id="in2" name="pay" required><sub>₹</sub></td>	</tr>
+<tr>	<td>Payment Mode</td>	<td><select name="pay_mode" required><option value="cash">Cash</option><option value="cheque">Cheque</option><option value="banktrsfr">Bank Transfer</option></select></td>	</tr>
+<tr>	<td>Sal. Payment Date</td>	<td><input type="date" id="in3" name="pay_date" required></td>	</tr>
+<tr>	<td>Payment Details</td>	<td><textarea rows="5" cols="25"  maxlength="50" name="pay_details"></textarea></td>	</tr>
+</table>
+</div>
+<br><br>
+<div align="center">
+  <table id='tb1'>
+    <tr>
+      <td><input type="submit" id="b1"  value="Submit" align="middle"></td>
+      <td><input type="reset" id="b1"></td>
+    </tr>
+  </table>
+</div>
+</form>
+
+
+</body>
+</html>
